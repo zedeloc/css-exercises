@@ -5,10 +5,14 @@ html {
 }
 
 .container {
+  display: grid;
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
 }
 
 .container div {
@@ -28,14 +32,19 @@ html {
 .sidebar {
   background-color: #005B94;
   grid-row: 2 / 4;
+  grid-column: 1 / 2;
 }
 
 .nav {
   background-color: #642cde;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
 
 .article p {
